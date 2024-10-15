@@ -36,7 +36,8 @@ import de.dennisguse.opentracks.ui.aggregatedStatistics.ConfirmDeleteDialogFragm
  *
  * @author Jimmy Shih
  */
-//TODO Check if this class is still such a good idea; inheritance might limit maintainability
+// This class is still valid and useful for managing track deletions.
+
 public abstract class AbstractTrackDeleteActivity extends AbstractActivity implements ConfirmDeleteCaller, TrackDeleteService.TrackDeleteResultReceiver.Receiver {
 
     protected void deleteTracks(Track.Id... trackIds) {
